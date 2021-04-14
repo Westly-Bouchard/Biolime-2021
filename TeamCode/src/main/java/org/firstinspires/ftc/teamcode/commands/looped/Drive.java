@@ -12,6 +12,7 @@ public class Drive extends Command {
     private Axis leftX, leftY, rightX;
 
     public Drive(Axis leftAxisX, Axis leftAxisY, Axis rightAxisX) {
+        Requires(driveTrain);
         this.leftX = leftAxisX;
         this.leftY = leftAxisY;
         this.rightX = rightAxisX;
